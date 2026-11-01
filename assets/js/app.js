@@ -266,7 +266,7 @@ let act2 = [5, 10, 15, 20];
 let range2 = act2.some((num) => {
 
     return num > 50;
-});
+}); 
 
 console.log(range2)
 
@@ -335,3 +335,232 @@ let car = cars.every((param)=>{
     return param.price > 50000000
 });
 console.log(car)
+
+// substring
+
+// task 1
+
+// let str = "Hello JavaScript";
+
+// let result00 = str.substring(6,10);
+// console.log(result00);
+
+// // task 2
+
+// let str1 = "Aisha Jahagirdar";
+// let resu = str1.substring(0,16);
+// console.log(resu);
+
+// task 3
+
+// let str = "JavaScript";
+// console.log(str.slice(2,8));
+
+// // task 4
+
+// let stre = "Aisha Jahagirdar";
+// console.log(stre.slice(8,1));
+
+// // task 5
+
+// let stre1 = "JavaScript";
+// console.log(stre1.slice(-8,-1));
+
+// // task 6
+
+// function greet(){
+//     console.log("Goodmorning");
+// }
+// greet();
+// greet();
+
+// // task 7
+
+// function greet1(name){
+//     return "Hello"+ " " +name;
+// }
+// let resultt = greet1("Aisha");
+// console.log(resultt);
+
+// // task 9
+
+// function greet2(name) {
+//     return "Hello Aisha";     
+// }
+// console.log(greet2());
+
+// // Even Number
+
+// let arr = [10,15,20,25,30,35,40]
+// arr.forEach(function(num){
+//     if (num % 2 === 0){
+//         console.log(num)
+//     }
+// });
+
+// // Odd Number
+
+// let arr1 = [10,15,20,25,30,35,40]
+// arr1.forEach(function(num){
+//     if(num % 2 !==0){
+//         console.log(num)
+//     }
+// });
+// //--------------------
+// function evenNumber(num){
+//     if(num % 2 === 0){
+//         return "Even Number";
+//     }else{
+//         return "Odd Number";
+//     }
+// };
+// console.log(evenNumber(7));
+// console.log(evenNumber(4));
+
+// //concatenation
+// let fname = "Aisha";
+// let lname = "Jahagirdar";
+
+// let fullName = fname+ " " +lname;
+// console.log(fullName);
+
+// let a = "Rohit";
+// let b = "Sharma";
+// console.log(a+ " " +b);
+
+// // First Letter or last letter
+// let name0 = "Aisha";
+// console.log(name0[0])
+// console.log(name0[1])
+
+// let name1 = "Aisha";
+// console.log(name1[name1.length-3])
+
+// let name2 = "Aisha";
+// console.log(name2[3]);
+// console.log(name2[name2.length-1])
+
+// Flat() method
+
+let arr = [1,2,3,4,[5,6],7,8,];
+let retail  = arr.flat();
+console.log(retail);
+
+
+let arr0 = [10,20,[30,[40],50,60],70];
+let reta = arr0.flat(1);
+console.log(reta);
+
+
+let arr1 = [10,[20,[30,40],[50,60],70]];
+let ret = arr1.flat(2);
+console.log(ret);
+
+let arr8 = [10,2,3,[4,5,[6,7,[8,9]]]];
+let ret1 = arr8.flat(2);
+console.log(ret1);
+
+let cars0 = ["BMW","Audi",["Mercedes","Volvo"],"Toyota"];
+let ret2 = cars0.flat();
+console.log(ret2);
+
+
+let cars1 =[
+    {name: "Aisha", age: 20},
+    [
+        {name: "Rohit", age: 25},
+        {name: "Riya", age: 22},
+        [
+             {name: "Rahul" , age: 30},
+             {name: "Priya" , age: 28},
+             [
+                {name: "Amrit" , age: 35}
+             ]
+        ]
+    ]
+]
+let ret3 = cars1.flat(2);
+console.log(ret3);
+
+
+let students01 = [
+    {name: "Aisha", mark: 85},
+    [
+        {name: "Rahul", mark: 90},
+        
+        {name: "priya", mark: 75}
+    ],
+    {name: "Riya",mark: 95}
+];
+let result00 = students01.flat();
+console.log(result00);
+
+
+let employees = [
+    {id: 1, name: "Aisha"},
+    [
+        {id: 2, name: "Rahul"},
+        {id:3, name: "priya"}
+    ],    
+    [
+        {id:4, name: "Riya"},
+      [  
+        {id:5, name: "Rohit"},
+      ]  
+    ],
+    [
+        {id:6, name: "Amrit"},
+    ],
+     {id:7, name: "Rohit"}
+];
+let resu = employees.flat(3);
+console.log(resu);
+
+// fill() method
+
+let arr2 = [1,2,3,4,5,6,7,];
+let retail1 = arr2.fill(0);
+console.log(retail1);
+
+let arr3 = [10,20,30,40,50];
+let retail2 = arr3.fill(0,2);
+console.log(retail2);
+
+let arr4 = [10,20,30,40,50,60,70,80];
+let retail3 = arr4.fill(100,0,2,);
+console.log(retail3);
+
+let arr5 = [10,20,30,40,50,60,70,80];
+let retail4 = arr5.fill(100,2,5);
+console.log(retail4);
+
+let arr6 = [12,29,27,77,98,24,45,65,89,43];
+let retail5 = arr6.fill(0,3,7);
+console.log(retail5);
+
+let arr7 = [10,20,30,40,50,60,70,80];
+let retail6 = arr7.fill(100,0,2);
+console.log(retail6);
+
+let employees1 = [
+    {id: 1, name: "Aisha"},
+    {id: 2, name: "Rahul"},
+    {id: 3, name: "Priya"},
+    {id: 4, name: "Riya"},
+]
+let ret0 = employees1.fill({id: 5, name: "Rohit"});
+console.log(ret0);
+
+let value = [10,20,3,40,6,4,3,7,8,9];
+let rest = value.fill(50,0,3);
+console.log(rest);
+
+let student00 = [
+    {name: "Aisha", age: 20 , marks: 97},
+    {name: "Rohit", age: 25 , marks: 90},
+    {name: "Riya", age: 22 , marks: 92},
+    {name: "Rahul", age: 30, marks: 88}
+];
+let resul1 = student00.fill({name: "Priya", age: 28 , marks: 99});
+console.log(resul1);
+
